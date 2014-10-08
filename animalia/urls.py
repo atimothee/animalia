@@ -4,9 +4,9 @@ from animalia import settings
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'animalia.views.home', name='home'),
+     url(r'^$', 'catalog.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-
+    url(r'^animals/list$', 'catalog.views.animal_list'),
     url(r'^admin/', include(admin.site.urls)),
 )
 

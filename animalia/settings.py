@@ -90,3 +90,7 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = '/Users/Timo/django/animalia/uploads'
 
 MEDIA_URL = 'http://localhost:8000/media/'
+
+TEMPLATE_DIRS = (
+    BASE_DIR + '/templates/',
+)

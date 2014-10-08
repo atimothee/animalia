@@ -1,7 +1,24 @@
 {% extends "base.html" %}
 {% block title%} Catalog - List{% endblock %}
 {% block content %}
+{% if animals%}
 {% for animal in animals%}
+<div class="col-md-3">
+    <h5>Filter Animals</h5>
+    <form action="/animals/list" method="get">
+        <div class="form-input">
+            <label>Name</label>
+            <input name="name" class="form-control">
+        </div>
+        <div class="form-input">
+            <label>Family</label>
+            <input name="family" class="form-control">
+        </div>
+        <br>
+        <button class="btn btn-sm" type="submit">Filter</button>
+    </form>
+
+</div>
 <div class="col-md-2">
     <div class="thumbnail">
 
@@ -16,4 +33,7 @@
     </div>
 </div>
 {% endfor%}
+{% else %}
+No animals to show
+{%endif%}
 {% endblock %}

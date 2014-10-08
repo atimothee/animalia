@@ -15,7 +15,7 @@ class Class(models.Model):
 
 class Order(models.Model):
     name = models.CharField(max_length=50)
-    phylum = models.ForeignKey(Class)
+    classe = models.ForeignKey(Class)
     def __unicode__(self):
         return self.name
 

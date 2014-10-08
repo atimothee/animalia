@@ -1,8 +1,9 @@
 from django.contrib import admin
-from catalog.models import Animal, Phylum, Order, Family, Genus, Species
+from catalog.models import Animal, Phylum, Order, Family, Genus, Species, Class
 
 admin.site.register(Animal)
 admin.site.register(Phylum)
+admin.site.register(Class)
 admin.site.register(Order)
 admin.site.register(Family)
 admin.site.register(Genus)

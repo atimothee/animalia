@@ -87,6 +87,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = '/Users/django/animalia/uploads'
+MEDIA_ROOT = '/Users/Timo/django/animalia/uploads'
 
 MEDIA_URL = 'http://localhost:8000/media/'

@@ -94,3 +94,6 @@ MEDIA_URL = 'http://localhost:8000/media/'
 TEMPLATE_DIRS = (
     BASE_DIR + '/templates/',
 )
+STATICFILES_DIRS = (
+    BASE_DIR + '/static/',
+)

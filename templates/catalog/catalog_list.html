@@ -2,6 +2,18 @@
 {% block title%} Catalog - List{% endblock %}
 {% block content %}
 {% for animal in animals%}
-    <p>{{animal.name}}</p>
+<div class="col-md-2">
+    <div class="thumbnail">
+
+        <a href="/id/{{animal.id}}">
+
+            <img src="{{animal.image.url}}">
+        </a>
+
+        <div class="caption">
+            <p>{{animal.description}}</p>
+        </div>
+    </div>
+</div>
 {% endfor%}
 {% endblock %}
